@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+    <title>IOP-NVP</title>
+    <meta content=
+    "IOP-NVP"
+    name="keywords">
+    <meta content=
+    "TECH support"
+    name="description">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=2.0" name="viewport">
+    <meta content="NOODP" name="googlebot">
+    
+
+    <style>
+
+        .header_403{
+            -webkit-tap-highlight-color: transparent;
+            cursor: default;
+            font-style: normal;
+            visibility: visible;
+            white-space: normal;
+            text-align: left;
+            box-sizing: inherit;
+            background-repeat: no-repeat;
+            font-weight: 600;
+            color: #000;
+            margin: 0;
+            letter-spacing: .025em;
+            font-family: NeueHaasGroteskDisplayBold,Arial,Helvetica,sans-serif;
+            font-size: 3rem;
+            line-height: 1;
+            margin-bottom: 30px;
+        }
+        .message_403{
+            -webkit-tap-highlight-color: transparent;
+            cursor: default;
+            font-style: normal;
+            visibility: visible;
+            white-space: normal;
+            text-align: left;
+            box-sizing: inherit;
+            background-repeat: no-repeat;
+            font-weight: 400;
+            color: #000;
+            margin: 0;
+            letter-spacing: .025em;
+            font-family: NeueHaasGroteskDisplayBold,Arial,Helvetica,sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.2;
+        }
+        .btn{
+            background-color: #EC2B2B;
+    background-image: linear-gradient(to bottom, #ec2b2b, #c52120);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 0;
+    padding: 12px 13px;
+    text-shadow: 0 -1px 0 rgb(0 0 0 / 25%);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+/*         
+        }
+        @media all and (max-width: 699px) and (min-width: 320px), (min-width: 1151px) {
+            .header_403 {
+                font-size: 3rem;
+            }
+
+            .message_403 {
+                font-size: 1.2rem;
+            }
+        } */
+    </style>
+
+ 
+</head>
+<body style="margin:0px">
+   <div id="pageWrapper">
+    <div style="margin: 0px auto; max-width: 800px; padding: 50px 10px 0px 10px;">
+         <a href="https://www.verizonwireless.com/" title="Verizon Wireless Logo"><img alt="Verizon Wireless Logo" src="https://ss7.vzw.com/is/image/VerizonWireless/vzw-logo-156-130-c" width="156"></a>
+    </div>
+    <div style="background-color:#e4e5e3; margin-top:30px;text-align:center;">
+    		
+            <div style="max-width:800px; margin: 0 auto; padding: 78px 10px 78px 10px;text-align:left;">
+                <h1 class="title">SSO Logout!</h1>
+				<h3>You've successfully logged out.</h3>
+				<p>For your security, please close your web browser now. The information you have just seen remains in your Web browser's memory until you close the browser.</p>
+				<form>
+					<section class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col-ms-12 login_form_fields_margin confirm_pass_section">
+						<button title="Continue to login" class="btn" id="redirect">Login</button>						
+					</section>
+                </form>
+               
+                <script>
+                
+
+                function paramsValue(name){
+                    const queryString = window.location.search;
+                    const urlParams = new URLSearchParams(queryString);
+                    let value = urlParams.get(name);
+
+                    if(!value) return null;
+                    value = decodeURIComponent(value.trim());
+                    try{
+                        const urlobj = new URL(value,window.location.origin);
+
+                        if(urlobj.origin !== window.location.origin && !/^https?:\/\//.test(urlobj.href)){
+                            return null;
+                        }
+                        return urlobj.href;
+                    }
+                    catch(e){
+                        return null;
+                    }
+                }
+
+                function ssoRedirection() {
+                        const url = paramsValue('ssologouturi');
+                        if (url)
+                            window.location.href = url
+                    }
+                    function redirect() {
+                        const url = paramsValue('app');
+                        if (url)
+                            window.location.href = url
+                    }
+                
+                window.onload = function() {
+                        document.cookie =`SMSESSION=; Domain=.verizonwireless.com; Path=/; Expires=Thu, 01 Jan 1970 00:00:00 GMT`;
+                        ssoRedirection()
+                        document.getElementById("redirect").onclick = function execute() {
+                            redirect() 
+                        }
+                    }
+                    //# sourceURL=logout.js
+
+                </script>
+			</div>
+    </div> 
+    <div style="max-width:800px; margin: 0 auto; padding: 78px 10px 78px 10px;text-align:center;">
+        <div class="text-center">&copy;
+           <script language="JavaScript" type="text/javascript">
+             now = new Date
+             theYear=now.getYear()
+             if (theYear < 1900)
+             theYear=theYear+1900
+             document.write(theYear)
+           </script>
+            Verizon Wireless, Network; All rights reserved. All content is confidential and proprietary.</div>
+           </div>
+   
+
+	</div>
+</body>
+</html>
