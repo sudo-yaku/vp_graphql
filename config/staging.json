@@ -1,0 +1,114 @@
+{
+    "mdbOption": {
+        "url": "MONGODBURL",
+        "autoRemove": "interval",
+        "autoRemoveInterval": 10,
+        "domain": "MOGONDBDOMAIN"
+    },
+    "origin": ["https://opsportal.verizonwireless.com","https://opsportal2.verizonwireless.com"],
+    "transportOptions": {
+        "host": "10.215.210.71",
+        "port": "25"
+    },
+    "app": {
+        "graphQlPort": "VPGRAPHQLPORT",
+        "authEnabled": false,
+        "authHeader": "APIGWAUTHHEADER",
+        "opsTrackerAuthHeader" : "OPSTRACKERAUTHHEADER",
+        "gcInterval": 3600000,
+        "session": {
+            "maxAge": 120
+        },
+        "maxUserActiveTime": 180,
+        "userServicePort": 8002,
+        "userAuthHeader": "Basic b25wOm9ucEBQcjBk",
+        "graphQlPath":"/graphqlstaging/graphql4g",
+        "adminhomepath":"/vendorportaltest",
+        "mobilehomepath":"/vpnetworktest"
+    },
+    "sso":{
+        "enableSSO" : true,
+        "IntranetSSOLogout":"https://ssologinuat.ebiz.verizon.com/ngauth/XUI/#logoutAll/",
+        "InternetSSOLogout":"https://www98.verizon.com/isso/logout.jsp",
+        "baseISSOpath":"/sso",
+        "InternetURL" : "https://fixedwirelessaccess-test.verizon.com",
+        "IntranetURL" : "https://iopvp-uat.vh.vzwnet.com"
+    },
+    "resources": {
+        "vpmadminPath": "/usr/apps/iop/apps/services/vpmadmin",
+        "vpmPath": "/usr/apps/iop/apps/services/vpm",
+        "apkPath": "/usr/apps/iop/apps/services/apk",
+        "rapsPath": "/usr/apps/iop/apps/services/network",
+        "sso_vpmadminPath": "/usr/apps/iop/apps/services/sso/vpmadmin",
+        "sso_vpmPath": "/usr/apps/iop/apps/services/sso/vpm",
+        "sso_apkPath": "/usr/apps/iop/apps/services/sso/apk",
+        "sso_rapsPath": "/usr/apps/iop/apps/services/sso/network"
+    },
+    "log": {
+        "filePath": "/usr/apps/iop/apps/logs/",
+        "level": "debug"
+    },
+    "auth": {
+        "secret": "secret",
+        "ttl": 3600
+    },
+    "opsTrackerService": {
+        "baseurl": "OPSTRACKERBASEURL"
+    },
+    "IopService": {
+        "baseurl": "IOPSERVICEURL",
+        "baseScruburl": "IOPSERVICESCRUBURL",
+        "iopProjectServiceUrl": "IOPPROJECTSERVICEURL",
+        "routeToVWRS":"ROUTE_OPS_TO_IOP",
+        "routeToVWRSNative": "ROUTE_OPS_TO_IOP_NATIVE",
+        "replaceOPSAPITOIOP": "REPLACE_OPSAPI_TO_IOP",
+        "vendorManagementAPITOIOP": "VENDOR_MANAGEMENT_API_TO_IOP"
+    },
+    "pmService": {
+        "baseurl": "PMSERVICEURL",
+        "baseScruburl": "PMSERVICESCRUBURL",
+        "redisUrl": "PMSERVICEURL_REDIS"
+    },
+    "ProxyService": {
+        "baseurl": "VPPROXYURL"
+    },
+    "IvrService": {
+        "baseurl": "IVRSERVICEURL"
+    },
+    "GrrService":{
+        "baseurl" : "GRRSERVICEURL"
+    },
+    "Vpuserservice": {
+        "baseurl": "VPUSERSERVICEURL",
+        "baseScruburl": "VPUSERSERVICESCRUBURL"
+    },
+    "OnpService": {
+        "baseurl": "ONPSERVICEURL",
+        "token": "ONENOTIFICATION_AUTH_TOKEN"
+    },
+    "NotifyService":{
+        "baseurl":"PUSH_NOTIFICATION_URL"
+    },
+    "devRecipients": {
+        "emails": [
+            "VPSTAGINGEMAILS@verizon.com"
+        ]
+    },
+    "newrelicSpec": {
+        "license_key": "NEW_RELIC_LICENSE_KEY",
+        "process_name": "NEW_RELIC_VPGraphQL_SVC"
+    },
+    "isOffShore":{
+        "identifier": "OFFSHORE_IDENTIFIER",
+        "user_id": "OFFSHORE_USERID"
+    },
+    "gsamDetailsFilePath": "/usr/apps/iop/apps/nvp/gsam_sensitive_dictionary.json",
+    "userServiceVP": "VPDB_USERS",
+    "InamServicesAuth":"INAM_SERVICES_AUTH",
+    "aindUrl": "AINDURL",
+    "aindUserName": "AINDUSERNAME",
+    "aindPassword": "AINDPASSWORD",
+    "AiOpsProject": "AI_OPS_PROJECT",
+    "wnoUserId": "WNOUSERID",
+    "cndapiserviceaccount":"CND_API_SERVICE_ACCOUNT"
+}

@@ -1,0 +1,66 @@
+{
+    "mdbOption":{
+        "url": "MONGODBURL",
+        "domain":"MOGONDBDOMAIN"
+    },
+    "app" : {
+        "graphQlPort":"VPGRAPHQLPORT",
+        "authHeader" : "APIGWAUTHHEADER"
+    },
+    "opsTrackerService": {
+        "baseurl" : "OPSTRACKERBASEURL"
+    },
+    "IopService":{
+        "baseurl":"IOPSERVICEURL",
+        "baseScruburl": "IOPSERVICESCRUBURL",
+        "iopProjectServiceUrl": "IOPPROJECTSERVICEURL",
+        "routeToVWRS":"ROUTE_OPS_TO_IOP",
+        "routeToVWRSNative": "ROUTE_OPS_TO_IOP_NATIVE",
+        "replaceOPSAPITOIOP": "REPLACE_OPSAPI_TO_IOP",
+        "vendorManagementAPITOIOP": "VENDOR_MANAGEMENT_API_TO_IOP"
+    },
+    "pmService":{
+        "baseurl":"PMSERVICEURL",
+        "baseScruburl": "PMSERVICESCRUBURL",
+        "redisUrl": "PMSERVICEURL_REDIS"
+    },
+    "ProxyService": {
+        "baseurl" : "VPPROXYURL"
+    },
+    "IvrService":{
+        "baseurl" : "IVRSERVICEURL"
+    },
+    "GrrService":{
+        "baseurl" : "GRRSERVICEURL"
+    },
+    "Vpuserservice":{
+        "baseurl" : "VPUSERSERVICEURL",
+        "baseScruburl": "VPUSERSERVICESCRUBURL"
+    },
+    "OnpService":{
+        "baseurl" : "ONPSERVICEURL",
+        "token": "ONENOTIFICATION_AUTH_TOKEN"
+
+    },
+    "NotifyService":{
+        "baseurl":"PUSH_NOTIFICATION_URL"
+    },
+    "newrelicSpec": {
+        "license_key": "NEW_RELIC_LICENSE_KEY",
+        "process_name": "NEW_RELIC_VPGraphQL_SVC"
+    },
+    "isOffShore": {
+        "identifier": "OFFSHORE_IDENTIFIER",
+        "user_id": "OFFSHORE_USERID"
+    },
+    "userServiceVP": "VPDB_USERS",
+    "InamServicesAuth":"INAM_SERVICES_AUTH",
+    "aindUrl": "AINDURL",
+    "aindUserName": "AINDUSERNAME",
+    "aindPassword": "AINDPASSWORD",
+    "AiOpsProject": "AI_OPS_PROJECT",
+    "wnoUserId": "WNOUSERID",
+    "redisServiceiop": "IOP_REDIS_URL",
+    "rootDriveRedis" : "ROOTDRIVE_REDIS",
+    "cndapiserviceaccount":"CND_API_SERVICE_ACCOUNT"
+}
