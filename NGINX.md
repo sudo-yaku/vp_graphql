@@ -502,6 +502,19 @@ http://txsliopda8v.nss.vzwnet.com:8024/graphql/iop-mobile
 sudo su - iopadmin (da8v)
 Again enter vz password
 
+WE can check for this as well for vendor_portal :
+http://txsliopda8v.nss.vzwnet.com:8015/graphqlstaging/graphql4g
+
+i want to check for 8015 not 8024
+http://txsliopda8v.nss.vzwnet.com:8015/graphqlstaging/graphql4g
+this url
+
+Answer: Your GraphQL server is running LOCALLY on the Linux server (da8v)
+
+When you access http://txsliopda8v.nss.vzwnet.com:8015/graphqlstaging/graphql4g
+Nginx forwards it to localhost:8011 (same server)
+Your GraphQL server is running on port 8011 on da8v
+
 
 
 
